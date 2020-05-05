@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h2>nomina</h2>
+
+        <h:form>
+            <h:panelGrid  columns="2">
+
+            <h:outputText value = "Nombre: " /> 
+            <h:inputText  value = "#{nomina.respuestaFormulario.nombre}" />
+            <h:outputText value = "Apellido: " /> 
+            <h:inputText  value = "#{nomina.respuestaFormulario.apellido}" />
+            <h:outputText value = "Cedula: " /> 
+            <h:inputText  value = "#{nomina.respuestaFormulario.cedula}" />
+            <h:outputText value = "Fecha de nacimiento: " /> 
+            <h:inputText  value = "#{nomina.respuestaFormulario.fecha}" />
+            <h:outputText value = "Nivel de estudio: " /> 
+            <h:inputText  value = "#{nomina.respuestaFormulario.nivelEstudio}" />
+            <h:outputText value = "idiomas: " />             
+            <h:inputText  value = "#{nomina.idiomas()}" />
+             <h:outputText value = "Nomina: " /> 
+             <h:inputText  value = "#{nomina.nomina}" />
+            </h:panelGrid>
+
+            <h:button value="Ir a Formulario" outcome="formulario" />
+        </h:form>
+    </h:body>
+</html>
+
