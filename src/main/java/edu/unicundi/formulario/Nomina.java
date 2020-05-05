@@ -29,7 +29,7 @@ private float costoIdioma;
     public Nomina() {
     }
     /**
-     * metodo que se ejecuta seguidamente del costructor y llama a los metodos calcularvaloridioma
+     * metodo que  ejecuta seguidamente del costructor y llama a los metodos calcularvaloridioma
      *y calcularvalorestuudio   para definir el valor de la nomina
      */
     @PostConstruct
